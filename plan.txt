@@ -1,0 +1,1282 @@
+[0;90m16:33:45.316[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1mdata.aws_region.current: Reading...[0m[0m[0m
+[0;90m16:33:45.317[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1mdata.aws_caller_identity.current: Reading...[0m[0m[0m
+[0;90m16:33:45.319[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_role.oidc_role["awsnetworkfoundation-sprd"]: Refreshing state... [id=AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SPRD-ROLE][0m[0m
+[0;90m16:33:45.319[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_role.oidc_role["awsinfracompute-snprd"]: Refreshing state... [id=AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SNPRD-ROLE][0m[0m
+[0;90m16:33:45.319[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_role.oidc_role["awsvdiappstream-snprd"]: Refreshing state... [id=AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SNPRD-ROLE][0m[0m
+[0;90m16:33:45.319[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_role.oidc_role["awsnetworkfoundation-mgmt"]: Refreshing state... [id=AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-MGMT-ROLE][0m[0m
+[0;90m16:33:45.320[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_role.oidc_role["awsinfracompute-sprd"]: Refreshing state... [id=AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SPRD-ROLE][0m[0m
+[0;90m16:33:45.320[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_role.oidc_role["awsvdiappstream-sprd"]: Refreshing state... [id=AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SPRD-ROLE][0m[0m
+[0;90m16:33:45.320[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1mdata.aws_region.current: Read complete after 0s [id=us-west-2][0m[0m
+[0;90m16:33:45.321[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_role.oidc_role["awsnetworkfoundation-snprd"]: Refreshing state... [id=AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SNPRD-ROLE][0m[0m
+[0;90m16:33:45.345[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1mdata.aws_caller_identity.current: Read complete after 0s [id=114978791651][0m[0m
+[0;90m16:33:45.351[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_policy.oidc_policy["awsnetworkfoundation-sprd"]: Refreshing state... [id=arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-SPRD-POLICY][0m[0m
+[0;90m16:33:45.351[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_policy.oidc_policy["awsinfracompute-sprd"]: Refreshing state... [id=arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSINFRACOMPUTE-SPRD-POLICY][0m[0m
+[0;90m16:33:45.351[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_policy.oidc_policy["awsinfracompute-snprd"]: Refreshing state... [id=arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSINFRACOMPUTE-SNPRD-POLICY][0m[0m
+[0;90m16:33:45.775[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_policy.oidc_policy["awsvdiappstream-sprd"]: Refreshing state... [id=arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSVDIAPPSTREAM-SPRD-POLICY][0m[0m
+[0;90m16:33:45.778[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_policy.oidc_policy["awsnetworkfoundation-mgmt"]: Refreshing state... [id=arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-MGMT-POLICY][0m[0m
+[0;90m16:33:45.787[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_policy.oidc_policy["awsnetworkfoundation-snprd"]: Refreshing state... [id=arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-SNPRD-POLICY][0m[0m
+[0;90m16:33:45.849[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[1maws_iam_policy.oidc_policy["awsvdiappstream-snprd"]: Refreshing state... [id=arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSVDIAPPSTREAM-SNPRD-POLICY][0m[0m
+[0;90m16:33:46.210[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0mTerraform used the selected providers to generate the following execution
+[0;90m16:33:46.210[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0mplan. Resource actions are indicated with the following symbols:
+[0;90m16:33:46.210[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  [32m+[0m create[0m[0m
+[0;90m16:33:46.210[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  [31m-[0m destroy[0m[0m
+[0;90m16:33:46.210[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0mTerraform planned the following actions, but then encountered a problem:
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_policy.oidc_policy["awscicdsecurity-mgmt"][0m will be created[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [32m+[0m[0m resource "aws_iam_policy" "oidc_policy" {[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m arn              = (known after apply)[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m attachment_count = (known after apply)[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m description      = "Allow assuming IAC role in mgmt for aws-cicd-security"[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m id               = (known after apply)[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m name             = "PRL-MGMT-GLBL-N-IAMPOL-OIDC-AWSCICDSECURITY-MGMT"[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m name_prefix      = (known after apply)[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m path             = "/"[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m policy           = jsonencode([0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m Statement = [[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = "sts:AssumeRole"[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = "arn:aws:iam::114978791651:role/AWS-MGMT-GLBL-N-IAMROL-IAC-AWSCICDSECURITY"[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "AssumeIACRole"[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:*",[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:PutObject",[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:DeleteObject",[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:ListBucket",[0m
+[0;90m16:33:46.211[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:GetBucketVersioning",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:s3:::aws-mgmt-usw2-n-s3bukt--terraform-state",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:s3:::aws-mgmt-usw2-n-s3bukt--terraform-state/*",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "AllowS3"[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:GetItem",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:PutItem",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:DeleteItem",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:Scan",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:UpdateItem",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:DescribeTable",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:dynamodb:us-west-2:114978791651:table/aws-mgmt-usw2-n-dynamo-terraform-locks",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "AllowDynamodb"[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action    = [[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:CreateRole",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:PutRolePolicy",[0m
+[0;90m16:33:46.212[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:AttachRolePolicy",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetRole",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetRolePolicy",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListRolePolicies",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:TagRole",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:UpdateRole",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:UpdateAssumeRolePolicy",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListAttachedRolePolicies",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Condition = {[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m StringEquals = {[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [32m+[0m[0m "iam:PermissionsBoundary" = "arn:aws:iam::114978791651:policy/IAC-Bootstrap-Boundary"[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect    = "Allow"[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource  = [[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:iam::114978791651:role/AWS-MGMT-GLBL-N-IAMROL-IAC-*",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid       = "BootstrapIACRoleCreation"[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:CreatePolicy",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetPolicy",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetPolicyVersion",[0m
+[0;90m16:33:46.213[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListPolicyVersions",[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:TagPolicy",[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:iam::114978791651:policy/IAC-Bootstrap-Boundary",[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "ManagePermissionsBoundary"[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetRole",[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListRoles",[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:iam::114978791651:role/AWS-MGMT-GLBL-N-IAMROL-IAC-*",[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "CheckIACRoleExistence"[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        )
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m policy_id        = (known after apply)[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m tags             = {[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "MODULE" = "oidc-role"[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m tags_all         = {[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.214[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "GITHUB_REPO"          = "aws-cicd-security"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "MODULE"               = "oidc-role"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "TECHNICAL-OWNER"      = "Emeka Machie"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "TECHNICAL-SUPPORT"    = "Emeka Machie"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_policy.oidc_policy["awscicdsecurity-snprd"][0m will be created[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [32m+[0m[0m resource "aws_iam_policy" "oidc_policy" {[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m arn              = (known after apply)[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m attachment_count = (known after apply)[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m description      = "Allow assuming IAC role in snprd for aws-cicd-security"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m id               = (known after apply)[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m name             = "PRL-MGMT-GLBL-N-IAMPOL-OIDC-AWSCICDSECURITY-SNPRD"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m name_prefix      = (known after apply)[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m path             = "/"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m policy           = jsonencode([0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m Statement = [[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = "sts:AssumeRole"[0m
+[0;90m16:33:46.215[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = "arn:aws:iam::730335485168:role/AWS-SNPRD-GLBL-N-IAMROL-IAC-AWSCICDSECURITY"[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "AssumeIACRole"[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:*",[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:PutObject",[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:DeleteObject",[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:ListBucket",[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:GetBucketVersioning",[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.216[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:s3:::aws-mgmt-usw2-n-s3bukt--terraform-state",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:s3:::aws-mgmt-usw2-n-s3bukt--terraform-state/*",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "AllowS3"[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:GetItem",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:PutItem",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:DeleteItem",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:Scan",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:UpdateItem",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:DescribeTable",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:dynamodb:us-west-2:114978791651:table/aws-mgmt-usw2-n-dynamo-terraform-locks",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "AllowDynamodb"[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action    = [[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:CreateRole",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:PutRolePolicy",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:AttachRolePolicy",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetRole",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetRolePolicy",[0m
+[0;90m16:33:46.217[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListRolePolicies",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:TagRole",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:UpdateRole",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:UpdateAssumeRolePolicy",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListAttachedRolePolicies",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Condition = {[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m StringEquals = {[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [32m+[0m[0m "iam:PermissionsBoundary" = "arn:aws:iam::730335485168:policy/IAC-Bootstrap-Boundary"[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect    = "Allow"[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource  = [[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:iam::730335485168:role/AWS-SNPRD-GLBL-N-IAMROL-IAC-*",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid       = "BootstrapIACRoleCreation"[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:CreatePolicy",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetPolicy",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetPolicyVersion",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListPolicyVersions",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:TagPolicy",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:iam::730335485168:policy/IAC-Bootstrap-Boundary",[0m
+[0;90m16:33:46.218[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "ManagePermissionsBoundary"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetRole",[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListRoles",[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:iam::730335485168:role/AWS-SNPRD-GLBL-N-IAMROL-IAC-*",[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "CheckIACRoleExistence"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        )
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m policy_id        = (known after apply)[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m tags             = {[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "MODULE" = "oidc-role"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m tags_all         = {[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.219[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "GITHUB_REPO"          = "aws-cicd-security"[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "MODULE"               = "oidc-role"[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "TECHNICAL-OWNER"      = "Emeka Machie"[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "TECHNICAL-SUPPORT"    = "Emeka Machie"[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_policy.oidc_policy["awscicdsecurity-sprd"][0m will be created[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [32m+[0m[0m resource "aws_iam_policy" "oidc_policy" {[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m arn              = (known after apply)[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m attachment_count = (known after apply)[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m description      = "Allow assuming IAC role in sprd for aws-cicd-security"[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m id               = (known after apply)[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m name             = "PRL-MGMT-GLBL-N-IAMPOL-OIDC-AWSCICDSECURITY-SPRD"[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m name_prefix      = (known after apply)[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m path             = "/"[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m policy           = jsonencode([0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m Statement = [[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = "sts:AssumeRole"[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = "arn:aws:iam::058264438918:role/AWS-SPRD-GLBL-N-IAMROL-IAC-AWSCICDSECURITY"[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "AssumeIACRole"[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:*",[0m
+[0;90m16:33:46.220[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:PutObject",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:DeleteObject",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:ListBucket",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "s3:GetBucketVersioning",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:s3:::aws-mgmt-usw2-n-s3bukt--terraform-state",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:s3:::aws-mgmt-usw2-n-s3bukt--terraform-state/*",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "AllowS3"[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:GetItem",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:PutItem",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:DeleteItem",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:Scan",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:UpdateItem",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "dynamodb:DescribeTable",[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.222[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:dynamodb:us-west-2:114978791651:table/aws-mgmt-usw2-n-dynamo-terraform-locks",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "AllowDynamodb"[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action    = [[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:CreateRole",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:PutRolePolicy",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:AttachRolePolicy",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetRole",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetRolePolicy",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListRolePolicies",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:TagRole",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:UpdateRole",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:UpdateAssumeRolePolicy",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListAttachedRolePolicies",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Condition = {[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m StringEquals = {[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [32m+[0m[0m "iam:PermissionsBoundary" = "arn:aws:iam::058264438918:policy/IAC-Bootstrap-Boundary"[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect    = "Allow"[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource  = [[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:iam::058264438918:role/AWS-SPRD-GLBL-N-IAMROL-IAC-*",[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid       = "BootstrapIACRoleCreation"[0m
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.223[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:CreatePolicy",[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetPolicy",[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetPolicyVersion",[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListPolicyVersions",[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:TagPolicy",[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:iam::058264438918:policy/IAC-Bootstrap-Boundary",[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "ManagePermissionsBoundary"[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [32m+[0m[0m {[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Action   = [[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:GetRole",[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "iam:ListRoles",[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Resource = [[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [32m+[0m[0m "arn:aws:iam::058264438918:role/AWS-SPRD-GLBL-N-IAMROL-IAC-*",[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        ]
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [32m+[0m[0m Sid      = "CheckIACRoleExistence"[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        )
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m policy_id        = (known after apply)[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m tags             = {[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "MODULE" = "oidc-role"[0m
+[0;90m16:33:46.224[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m tags_all         = {[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "GITHUB_REPO"          = "aws-cicd-security"[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "MODULE"               = "oidc-role"[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "TECHNICAL-OWNER"      = "Emeka Machie"[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "TECHNICAL-SUPPORT"    = "Emeka Machie"[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_policy.oidc_policy["awsinfracompute-snprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsinfracompute-snprd"] is not in for_each map)
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_policy" "oidc_policy" {[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn              = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSINFRACOMPUTE-SNPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m attachment_count = 0 [90m-> null[0m[0m[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m description      = "Allow assuming IAC role in snprd for aws-infra-compute" [90m-> null[0m[0m[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id               = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSINFRACOMPUTE-SNPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.225[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name             = "AWS-OIDC-ASSUME-AWSINFRACOMPUTE-SNPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path             = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy           = jsonencode([0m
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action   = "sts:AssumeRole"[0m
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Resource = "arn:aws:iam::730335485168:role/AWS-usw2-IACROLE-AWSINFRACOMPUTE-SNPRD"[0m
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Sid      = "AssumeIACRole"[0m
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.226[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy_id        = "ANPARVRKFEDR7OSQYOLR4" [90m-> null[0m[0m[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all         = {[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (1 unchanged attribute hidden)[0m[0m[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_policy.oidc_policy["awsinfracompute-sprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsinfracompute-sprd"] is not in for_each map)
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_policy" "oidc_policy" {[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn              = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSINFRACOMPUTE-SPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m attachment_count = 0 [90m-> null[0m[0m[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m description      = "Allow assuming IAC role in sprd for aws-infra-compute" [90m-> null[0m[0m[0m
+[0;90m16:33:46.227[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id               = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSINFRACOMPUTE-SPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name             = "AWS-OIDC-ASSUME-AWSINFRACOMPUTE-SPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path             = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy           = jsonencode([0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action   = "sts:AssumeRole"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Resource = "arn:aws:iam::058264438918:role/AWS-usw2-IACROLE-AWSINFRACOMPUTE-SPRD"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Sid      = "AssumeIACRole"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy_id        = "ANPARVRKFEDR6PAJLMV4P" [90m-> null[0m[0m[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all         = {[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.228[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (1 unchanged attribute hidden)[0m[0m[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_policy.oidc_policy["awsnetworkfoundation-mgmt"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsnetworkfoundation-mgmt"] is not in for_each map)
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_policy" "oidc_policy" {[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn              = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-MGMT-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m attachment_count = 0 [90m-> null[0m[0m[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m description      = "Allow assuming IAC role in mgmt for aws-network-foundation" [90m-> null[0m[0m[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id               = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-MGMT-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name             = "AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-MGMT-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path             = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy           = jsonencode([0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action   = "sts:AssumeRole"[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Resource = "arn:aws:iam::114978791651:role/AWS-usw2-IACROLE-AWSNETWORKFOUNDATION-MGMT"[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Sid      = "AssumeIACRole"[0m
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.229[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy_id        = "ANPARVRKFEDRTRHKWZ42U" [90m-> null[0m[0m[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all         = {[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (1 unchanged attribute hidden)[0m[0m[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_policy.oidc_policy["awsnetworkfoundation-snprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsnetworkfoundation-snprd"] is not in for_each map)
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_policy" "oidc_policy" {[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn              = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-SNPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m attachment_count = 0 [90m-> null[0m[0m[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m description      = "Allow assuming IAC role in snprd for aws-network-foundation" [90m-> null[0m[0m[0m
+[0;90m16:33:46.230[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id               = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-SNPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.231[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name             = "AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-SNPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.231[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path             = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.231[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy           = jsonencode([0m
+[0;90m16:33:46.231[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.231[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.231[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.231[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action   = "sts:AssumeRole"[0m
+[0;90m16:33:46.231[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.231[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Resource = "arn:aws:iam::730335485168:role/AWS-usw2-IACROLE-AWSNETWORKFOUNDATION-SNPRD"[0m
+[0;90m16:33:46.231[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Sid      = "AssumeIACRole"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy_id        = "ANPARVRKFEDRZVLJJV5J3" [90m-> null[0m[0m[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all         = {[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (1 unchanged attribute hidden)[0m[0m[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_policy.oidc_policy["awsnetworkfoundation-sprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsnetworkfoundation-sprd"] is not in for_each map)
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_policy" "oidc_policy" {[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn              = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-SPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m attachment_count = 0 [90m-> null[0m[0m[0m
+[0;90m16:33:46.232[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m description      = "Allow assuming IAC role in sprd for aws-network-foundation" [90m-> null[0m[0m[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id               = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-SPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name             = "AWS-OIDC-ASSUME-AWSNETWORKFOUNDATION-SPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path             = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy           = jsonencode([0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action   = "sts:AssumeRole"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Resource = "arn:aws:iam::058264438918:role/AWS-usw2-IACROLE-AWSNETWORKFOUNDATION-SPRD"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Sid      = "AssumeIACRole"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy_id        = "ANPARVRKFEDR4QC5A3MCD" [90m-> null[0m[0m[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all         = {[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.233[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (1 unchanged attribute hidden)[0m[0m[0m
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_policy.oidc_policy["awsvdiappstream-snprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsvdiappstream-snprd"] is not in for_each map)
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_policy" "oidc_policy" {[0m
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn              = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSVDIAPPSTREAM-SNPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m attachment_count = 0 [90m-> null[0m[0m[0m
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m description      = "Allow assuming IAC role in snprd for aws-vdi-appstream" [90m-> null[0m[0m[0m
+[0;90m16:33:46.234[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id               = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSVDIAPPSTREAM-SNPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name             = "AWS-OIDC-ASSUME-AWSVDIAPPSTREAM-SNPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path             = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy           = jsonencode([0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action   = "sts:AssumeRole"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Resource = "arn:aws:iam::730335485168:role/AWS-usw2-IACROLE-AWSVDIAPPSTREAM-SNPRD"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Sid      = "AssumeIACRole"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy_id        = "ANPARVRKFEDRWRD4CP3RB" [90m-> null[0m[0m[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all         = {[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.235[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (1 unchanged attribute hidden)[0m[0m[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_policy.oidc_policy["awsvdiappstream-sprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsvdiappstream-sprd"] is not in for_each map)
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_policy" "oidc_policy" {[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn              = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSVDIAPPSTREAM-SPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m attachment_count = 0 [90m-> null[0m[0m[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m description      = "Allow assuming IAC role in sprd for aws-vdi-appstream" [90m-> null[0m[0m[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id               = "arn:aws:iam::114978791651:policy/AWS-OIDC-ASSUME-AWSVDIAPPSTREAM-SPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name             = "AWS-OIDC-ASSUME-AWSVDIAPPSTREAM-SPRD-POLICY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path             = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy           = jsonencode([0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action   = "sts:AssumeRole"[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect   = "Allow"[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Resource = "arn:aws:iam::058264438918:role/AWS-usw2-IACROLE-AWSVDIAPPSTREAM-SPRD"[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Sid      = "AssumeIACRole"[0m
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.236[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m policy_id        = "ANPARVRKFEDRS5N2REL6P" [90m-> null[0m[0m[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all         = {[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (1 unchanged attribute hidden)[0m[0m[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_role.oidc_role["awsinfracompute-snprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsinfracompute-snprd"] is not in for_each map)
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_role" "oidc_role" {[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn                   = "arn:aws:iam::114978791651:role/AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SNPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m assume_role_policy    = jsonencode([0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.237[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action    = "sts:AssumeRoleWithWebIdentity"[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Condition = {[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringEquals = {[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringLike   = {[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:sub" = [[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                  [31m-[0m[0m "repo:PRLInfra/aws-infra-compute:*",[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                ]
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect    = "Allow"[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Principal = {[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m Federated = "arn:aws:iam::114978791651:oidc-provider/token.actions.githubusercontent.com"[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m create_date           = "2025-06-19T21:39:37Z" [90m-> null[0m[0m[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m force_detach_policies = false [90m-> null[0m[0m[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id                    = "AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SNPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m managed_policy_arns   = [] [90m-> null[0m[0m[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m max_session_duration  = 3600 [90m-> null[0m[0m[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name                  = "AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SNPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.238[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path                  = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags                  = {[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"          = "AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SNPRD-ROLE"[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"       = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"    = "PRLInfra/aws-infra-compute"[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount" = "snprd"[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all              = {[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.239[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"                 = "AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SNPRD-ROLE"[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"              = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"           = "PRLInfra/aws-infra-compute"[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount"        = "snprd"[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m unique_id             = "AROARVRKFEDRYE7TLJITY" [90m-> null[0m[0m[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (3 unchanged attributes hidden)[0m[0m[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_role.oidc_role["awsinfracompute-sprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsinfracompute-sprd"] is not in for_each map)
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_role" "oidc_role" {[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn                   = "arn:aws:iam::114978791651:role/AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m assume_role_policy    = jsonencode([0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action    = "sts:AssumeRoleWithWebIdentity"[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Condition = {[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringEquals = {[0m
+[0;90m16:33:46.240[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringLike   = {[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:sub" = [[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                  [31m-[0m[0m "repo:PRLInfra/aws-infra-compute:*",[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                ]
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect    = "Allow"[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Principal = {[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m Federated = "arn:aws:iam::114978791651:oidc-provider/token.actions.githubusercontent.com"[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m create_date           = "2025-06-19T21:39:37Z" [90m-> null[0m[0m[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m force_detach_policies = false [90m-> null[0m[0m[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id                    = "AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m managed_policy_arns   = [] [90m-> null[0m[0m[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m max_session_duration  = 3600 [90m-> null[0m[0m[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name                  = "AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path                  = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags                  = {[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"          = "AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SPRD-ROLE"[0m
+[0;90m16:33:46.241[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"       = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"    = "PRLInfra/aws-infra-compute"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount" = "sprd"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all              = {[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"                 = "AWS-GITHUB-OIDC-AWSINFRACOMPUTE-SPRD-ROLE"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"              = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.242[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"           = "PRLInfra/aws-infra-compute"[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount"        = "sprd"[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m unique_id             = "AROARVRKFEDRSPV5QHKZ2" [90m-> null[0m[0m[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (3 unchanged attributes hidden)[0m[0m[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_role.oidc_role["awsnetworkfoundation-mgmt"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsnetworkfoundation-mgmt"] is not in for_each map)
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_role" "oidc_role" {[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn                   = "arn:aws:iam::114978791651:role/AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-MGMT-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m assume_role_policy    = jsonencode([0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action    = "sts:AssumeRoleWithWebIdentity"[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Condition = {[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringEquals = {[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringLike   = {[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:sub" = [[0m
+[0;90m16:33:46.243[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                  [31m-[0m[0m "repo:PRLInfra/aws-network-foundation:*",[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                ]
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect    = "Allow"[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Principal = {[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m Federated = "arn:aws:iam::114978791651:oidc-provider/token.actions.githubusercontent.com"[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m create_date           = "2025-06-19T21:39:37Z" [90m-> null[0m[0m[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m force_detach_policies = false [90m-> null[0m[0m[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id                    = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-MGMT-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m managed_policy_arns   = [] [90m-> null[0m[0m[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m max_session_duration  = 3600 [90m-> null[0m[0m[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name                  = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-MGMT-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path                  = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags                  = {[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"          = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-MGMT-ROLE"[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"       = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"    = "PRLInfra/aws-network-foundation"[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount" = "mgmt"[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.244[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all              = {[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"                 = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-MGMT-ROLE"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"              = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"           = "PRLInfra/aws-network-foundation"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount"        = "mgmt"[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m unique_id             = "AROARVRKFEDRSVUYJ4VOT" [90m-> null[0m[0m[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (3 unchanged attributes hidden)[0m[0m[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_role.oidc_role["awsnetworkfoundation-snprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsnetworkfoundation-snprd"] is not in for_each map)
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_role" "oidc_role" {[0m
+[0;90m16:33:46.245[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn                   = "arn:aws:iam::114978791651:role/AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SNPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m assume_role_policy    = jsonencode([0m
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action    = "sts:AssumeRoleWithWebIdentity"[0m
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Condition = {[0m
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringEquals = {[0m
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"[0m
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringLike   = {[0m
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:sub" = [[0m
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                  [31m-[0m[0m "repo:PRLInfra/aws-network-foundation:*",[0m
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                ]
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.246[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect    = "Allow"[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Principal = {[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m Federated = "arn:aws:iam::114978791651:oidc-provider/token.actions.githubusercontent.com"[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m create_date           = "2025-06-19T21:39:37Z" [90m-> null[0m[0m[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m force_detach_policies = false [90m-> null[0m[0m[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id                    = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SNPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m managed_policy_arns   = [] [90m-> null[0m[0m[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m max_session_duration  = 3600 [90m-> null[0m[0m[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name                  = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SNPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path                  = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags                  = {[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"          = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SNPRD-ROLE"[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"       = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"    = "PRLInfra/aws-network-foundation"[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount" = "snprd"[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all              = {[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.247[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"                 = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SNPRD-ROLE"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"              = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"           = "PRLInfra/aws-network-foundation"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount"        = "snprd"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m unique_id             = "AROARVRKFEDR4J2MWBBSI" [90m-> null[0m[0m[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (3 unchanged attributes hidden)[0m[0m[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_role.oidc_role["awsnetworkfoundation-sprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsnetworkfoundation-sprd"] is not in for_each map)
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_role" "oidc_role" {[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn                   = "arn:aws:iam::114978791651:role/AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m assume_role_policy    = jsonencode([0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action    = "sts:AssumeRoleWithWebIdentity"[0m
+[0;90m16:33:46.248[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Condition = {[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringEquals = {[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringLike   = {[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:sub" = [[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                  [31m-[0m[0m "repo:PRLInfra/aws-network-foundation:*",[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                ]
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect    = "Allow"[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Principal = {[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m Federated = "arn:aws:iam::114978791651:oidc-provider/token.actions.githubusercontent.com"[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m create_date           = "2025-06-19T21:39:37Z" [90m-> null[0m[0m[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m force_detach_policies = false [90m-> null[0m[0m[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id                    = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m managed_policy_arns   = [] [90m-> null[0m[0m[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m max_session_duration  = 3600 [90m-> null[0m[0m[0m
+[0;90m16:33:46.249[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name                  = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path                  = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags                  = {[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"          = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SPRD-ROLE"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"       = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"    = "PRLInfra/aws-network-foundation"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount" = "sprd"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all              = {[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"                 = "AWS-GITHUB-OIDC-AWSNETWORKFOUNDATION-SPRD-ROLE"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"              = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"           = "PRLInfra/aws-network-foundation"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount"        = "sprd"[0m
+[0;90m16:33:46.250[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m unique_id             = "AROARVRKFEDR62TFVT4AW" [90m-> null[0m[0m[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (3 unchanged attributes hidden)[0m[0m[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_role.oidc_role["awsvdiappstream-snprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsvdiappstream-snprd"] is not in for_each map)
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_role" "oidc_role" {[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn                   = "arn:aws:iam::114978791651:role/AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SNPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m assume_role_policy    = jsonencode([0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action    = "sts:AssumeRoleWithWebIdentity"[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Condition = {[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringEquals = {[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringLike   = {[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:sub" = [[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                  [31m-[0m[0m "repo:PRLInfra/aws-vdi-appstream:*",[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                ]
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect    = "Allow"[0m
+[0;90m16:33:46.251[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Principal = {[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m Federated = "arn:aws:iam::114978791651:oidc-provider/token.actions.githubusercontent.com"[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m create_date           = "2025-06-19T21:39:37Z" [90m-> null[0m[0m[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m force_detach_policies = false [90m-> null[0m[0m[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id                    = "AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SNPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m managed_policy_arns   = [] [90m-> null[0m[0m[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m max_session_duration  = 3600 [90m-> null[0m[0m[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name                  = "AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SNPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path                  = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags                  = {[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"          = "AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SNPRD-ROLE"[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"       = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"    = "PRLInfra/aws-vdi-appstream"[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount" = "snprd"[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all              = {[0m
+[0;90m16:33:46.252[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"                 = "AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SNPRD-ROLE"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"              = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"           = "PRLInfra/aws-vdi-appstream"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount"        = "snprd"[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m unique_id             = "AROARVRKFEDRYKUAGNCJQ" [90m-> null[0m[0m[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (3 unchanged attributes hidden)[0m[0m[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1m  # aws_iam_role.oidc_role["awsvdiappstream-sprd"][0m will be [1m[31mdestroyed[0m[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  # (because key ["awsvdiappstream-sprd"] is not in for_each map)
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m  [31m-[0m[0m resource "aws_iam_role" "oidc_role" {[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m arn                   = "arn:aws:iam::114978791651:role/AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.253[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m assume_role_policy    = jsonencode([0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Statement = [[0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  [31m-[0m[0m {[0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Action    = "sts:AssumeRoleWithWebIdentity"[0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Condition = {[0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringEquals = {[0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"[0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m StringLike   = {[0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                              [31m-[0m[0m "token.actions.githubusercontent.com:sub" = [[0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                  [31m-[0m[0m "repo:PRLInfra/aws-vdi-appstream:*",[0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                                ]
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                            }
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Effect    = "Allow"[0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      [31m-[0m[0m Principal = {[0m
+[0;90m16:33:46.254[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                          [31m-[0m[0m Federated = "arn:aws:iam::114978791651:oidc-provider/token.actions.githubusercontent.com"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                        }
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                ]
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m Version   = "2012-10-17"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ) [90m-> null[0m[0m[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m create_date           = "2025-06-19T21:39:37Z" [90m-> null[0m[0m[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m force_detach_policies = false [90m-> null[0m[0m[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m id                    = "AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m managed_policy_arns   = [] [90m-> null[0m[0m[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m max_session_duration  = 3600 [90m-> null[0m[0m[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m name                  = "AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SPRD-ROLE" [90m-> null[0m[0m[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m path                  = "/" [90m-> null[0m[0m[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags                  = {[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"          = "AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SPRD-ROLE"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"       = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"    = "PRLInfra/aws-vdi-appstream"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount" = "sprd"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m tags_all              = {[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ACCOUNT-ID"           = "114978791651"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-APPLICATION" = "Network Foundation"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-CUSTODIAN"   = "Jeremy Lumgair"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "BUSINESS-OWNER"       = "Mike Han"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "COST-CENTER"          = "DEP003.635.350"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "ENVIRONMENT"          = "prod"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GENERATED-BY"         = "terraform"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "GITHUB_REPO"          = "aws-network-foundation"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Name"                 = "AWS-GITHUB-OIDC-AWSVDIAPPSTREAM-SPRD-ROLE"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Purpose"              = "GitHub Actions OIDC authentication"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "Repository"           = "PRLInfra/aws-vdi-appstream"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-OWNER"      = "Lee Brandt"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TECHNICAL-SUPPORT"    = "Lee Brandt"[0m
+[0;90m16:33:46.255[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m "TargetAccount"        = "sprd"[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        } [90m-> null[0m[0m[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m unique_id             = "AROARVRKFEDRS2HO4DOXM" [90m-> null[0m[0m[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        [90m# (3 unchanged attributes hidden)[0m[0m[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[1mPlan:[0m 3 to add, 0 to change, 14 to destroy.[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[0m[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0mChanges to Outputs:
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  [32m+[0m[0m debug_first_combo   = {[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m branches_formatted = [[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/main",[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/feat/*",[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/fix/*",[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ]
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m branches_raw       = [[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "main",[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "feat/*",[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m "fix/*",[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        ]
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m template_result    = <<-EOT[0m
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            // {
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //     "Version": "2012-10-17",
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //     "Statement": [
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //       {
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //         "Effect": "Allow",
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //         "Principal": {
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //           "Federated": "arn:aws:iam::114978791651:oidc-provider/token.actions.githubusercontent.com"
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //         },
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //         "Action": "sts:AssumeRoleWithWebIdentity",
+[0;90m16:33:46.256[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //         "Condition": {
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //           "StringEquals": {
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //             "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //           },
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //           "StringLike": {
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //             "token.actions.githubusercontent.com:sub": [
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //               "repo:PRLInfra/aws-cicd-security:*"
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //             ]
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //           }
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //         }
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //       }
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //     ]
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            //   }
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            {
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              "Version": "2012-10-17",
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              "Statement": [
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                {
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  "Effect": "Allow",
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  "Principal": {
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    "Federated": "arn:aws:iam::114978791651:oidc-provider/token.actions.githubusercontent.com"
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  },
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  "Action": "sts:AssumeRoleWithWebIdentity",
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  "Condition": {
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    "StringEquals": {
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    },
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    "StringLike": {
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                      "token.actions.githubusercontent.com:sub": ["repo:PRLInfra/aws-cicd-security:ref:refs/heads/main","repo:PRLInfra/aws-cicd-security:ref:refs/heads/feat/*","repo:PRLInfra/aws-cicd-security:ref:refs/heads/fix/*"]
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                    }
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                  }
+[0;90m16:33:46.257[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m                }
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              ]
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            }
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        EOT
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m  [33m~[0m[0m repo_account_matrix = {[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m awscicdsecurity-mgmt       = {[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m account_code   = "mgmt"[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m account_id     = "114978791651"[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m account_key    = "mgmt"[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m branches       = [[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/main",[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/feat/*",[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/fix/*",[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            ]
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m full_repo_name = "PRLInfra/aws-cicd-security"[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m key            = "awscicdsecurity-mgmt"[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m organization   = "PRLInfra"[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m repo_key       = "awscicdsecurity"[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m repository     = "aws-cicd-security"[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m awscicdsecurity-snprd      = {[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m account_code   = "snprd"[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m account_id     = "730335485168"[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m account_key    = "snprd"[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m branches       = [[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/main",[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/feat/*",[0m
+[0;90m16:33:46.258[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/fix/*",[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            ]
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m full_repo_name = "PRLInfra/aws-cicd-security"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m key            = "awscicdsecurity-snprd"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m organization   = "PRLInfra"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m repo_key       = "awscicdsecurity"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m repository     = "aws-cicd-security"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [32m+[0m[0m awscicdsecurity-sprd       = {[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m account_code   = "sprd"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m account_id     = "058264438918"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m account_key    = "sprd"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m branches       = [[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/main",[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/feat/*",[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [32m+[0m[0m "repo:PRLInfra/aws-cicd-security:ref:refs/heads/fix/*",[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            ]
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m full_repo_name = "PRLInfra/aws-cicd-security"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m key            = "awscicdsecurity-sprd"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m organization   = "PRLInfra"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m repo_key       = "awscicdsecurity"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [32m+[0m[0m repository     = "aws-cicd-security"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m awsinfracompute-snprd      = {[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_code   = "snprd"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_id     = "730335485168"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_key    = "snprd"[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m branches       = [[0m
+[0;90m16:33:46.259[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "main",[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "feat/*",[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "fix/*",[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            ]
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m full_repo_name = "PRLInfra/aws-infra-compute"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m key            = "awsinfracompute-snprd"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m organization   = "PRLInfra"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repo_key       = "awsinfracompute"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repository     = "aws-infra-compute"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m awsinfracompute-sprd       = {[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_code   = "sprd"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_id     = "058264438918"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_key    = "sprd"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m branches       = [[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "main",[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "feat/*",[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "fix/*",[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            ]
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m full_repo_name = "PRLInfra/aws-infra-compute"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m key            = "awsinfracompute-sprd"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m organization   = "PRLInfra"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repo_key       = "awsinfracompute"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repository     = "aws-infra-compute"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m awsnetworkfoundation-mgmt  = {[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_code   = "mgmt"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_id     = "114978791651"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_key    = "mgmt"[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m branches       = [[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "main",[0m
+[0;90m16:33:46.260[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "feat/*",[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "fix/*",[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            ]
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m full_repo_name = "PRLInfra/aws-network-foundation"[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m key            = "awsnetworkfoundation-mgmt"[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m organization   = "PRLInfra"[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repo_key       = "awsnetworkfoundation"[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repository     = "aws-network-foundation"[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m awsnetworkfoundation-snprd = {[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_code   = "snprd"[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_id     = "730335485168"[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_key    = "snprd"[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m branches       = [[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "main",[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "feat/*",[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "fix/*",[0m
+[0;90m16:33:46.261[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            ]
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m full_repo_name = "PRLInfra/aws-network-foundation"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m key            = "awsnetworkfoundation-snprd"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m organization   = "PRLInfra"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repo_key       = "awsnetworkfoundation"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repository     = "aws-network-foundation"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m awsnetworkfoundation-sprd  = {[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_code   = "sprd"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_id     = "058264438918"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_key    = "sprd"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m branches       = [[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "main",[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "feat/*",[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "fix/*",[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            ]
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m full_repo_name = "PRLInfra/aws-network-foundation"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m key            = "awsnetworkfoundation-sprd"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m organization   = "PRLInfra"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repo_key       = "awsnetworkfoundation"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repository     = "aws-network-foundation"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m awsvdiappstream-snprd      = {[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_code   = "snprd"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_id     = "730335485168"[0m
+[0;90m16:33:46.262[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_key    = "snprd"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m branches       = [[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "main",[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "feat/*",[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "fix/*",[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            ]
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m full_repo_name = "PRLInfra/aws-vdi-appstream"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m key            = "awsvdiappstream-snprd"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m organization   = "PRLInfra"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repo_key       = "awsvdiappstream"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repository     = "aws-vdi-appstream"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m      [31m-[0m[0m awsvdiappstream-sprd       = {[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_code   = "sprd"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_id     = "058264438918"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m account_key    = "sprd"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m branches       = [[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "main",[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "feat/*",[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m              [31m-[0m[0m "fix/*",[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m            ]
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m full_repo_name = "PRLInfra/aws-vdi-appstream"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m key            = "awsvdiappstream-sprd"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m organization   = "PRLInfra"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repo_key       = "awsvdiappstream"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m          [31m-[0m[0m repository     = "aws-vdi-appstream"[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m        }
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m    }
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[33m╷[0m[0m[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[33m│[0m [0m[1m[33mWarning: [0m[0m[1mDeprecated attribute[0m[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[33m│[0m [0m[0m
+[0;90m16:33:46.263[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[33m│[0m [0m[0m  on main.tf line 35, in resource "aws_iam_policy" "oidc_policy":[0m
+[0;90m16:33:46.264[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[33m│[0m [0m  35:     region            = data.aws_region.current[4m.name[0m[0m[0m
+[0;90m16:33:46.264[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[33m│[0m [0m[0m
+[0;90m16:33:46.264[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[33m│[0m [0mThe attribute "name" is deprecated. Refer to the provider documentation for[0m
+[0;90m16:33:46.264[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[33m│[0m [0mdetails.[0m
+[0;90m16:33:46.264[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[33m│[0m [0m[0m
+[0;90m16:33:46.264[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[33m│[0m [0m(and 3 more similar warnings elsewhere)[0m
+[0;90m16:33:46.264[0m [0;37mSTDOUT[0m [0;38;5;67m[.] [0m[0;36mterraform: [0m[33m╵[0m[0m[0m

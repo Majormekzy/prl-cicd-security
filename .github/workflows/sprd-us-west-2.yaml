@@ -1,0 +1,84 @@
+name: AWS-SHARED-PROD - US-WEST-2
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Choose action to perform'
+        required: true
+        default: 'plan'
+        type: choice
+        options:
+        - plan
+        - apply
+  pull_request:
+    branches:
+    - main
+    paths-ignore:
+    - '.github/**'
+    - '!.github/workflows/sprd-us-west-2.yaml'
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  iac-role:
+    uses: ./.github/workflows/plan-apply-component.yaml
+    with:
+      account: aws-shared-prod
+      account_role_code: SPRD
+      account_number: 058264438918
+      region: us-west-2
+      component: tf-iac-role
+      force_action: ${{ github.event_name == 'workflow_dispatch' && inputs.action || '' }}
+
+  # ami_builder:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-shared-prod
+  #     account_role_code: SPRD
+  #     account_number: 700038817084
+  #     region: us-west-2
+  #     component: amibuilder
+  #     force_action: ${{ github.event_name == 'workflow_dispatch' && inputs.action || '' }}
+
+  # ec2_autojoin:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-shared-prod
+  #     account_role_code: SPRD
+  #     account_number: 700038817084
+  #     region: us-west-2
+  #     component: ec2-autojoin
+  #     force_action: ${{ github.event_name == 'workflow_dispatch' && inputs.action || '' }}
+
+  # ec2_scheduler:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-shared-prod
+  #     account_role_code: SPRD
+  #     account_number: 700038817084
+  #     region: us-west-2
+  #     component: ec2-scheduler
+  #     force_action: ${{ github.event_name == 'workflow_dispatch' && inputs.action || '' }}
+
+  # state_change:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-shared-prod
+  #     account_role_code: SPRD
+  #     account_number: 700038817084
+  #     region: us-west-2
+  #     component: state-change
+  #     force_action: ${{ github.event_name == 'workflow_dispatch' && inputs.action || '' }}
+
+  # inventory_tracker:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-sec-net-prod
+  #     account_role_code: SCNPRD
+  #     account_number: 827609958089
+  #     region: us-west-2
+  #     component: inventory-tracker
+  #     force_action: ${{ github.event_name == 'workflow_dispatch' && inputs.action || '' }}

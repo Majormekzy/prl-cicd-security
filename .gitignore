@@ -1,0 +1,11 @@
+.ignore
+Makefile.local
+.terragrunt-cache
+.DS_Store
+*.swp
+secret_env_vars.hcl
+node_modules
+.terraform.lock.hcl
+#
+trivyresult.txt
+*.tfstate

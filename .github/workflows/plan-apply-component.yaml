@@ -1,0 +1,244 @@
+# name: Plan & Apply 
+
+# on:
+#   workflow_call:
+#     inputs:
+#       account:
+#         description: 'The aws account or environment'
+#         required: true
+#         type: string
+#       account_role_code:
+#         description: 'Short code for the account IAM role'
+#         required: true
+#         type: string
+#       account_number:
+#         description: 'Deployment account, number'
+#         required: true
+#         type: string
+#       region:
+#         description: 'The aws region'
+#         required: true
+#         type: string
+#         default: us-west-2
+#       component:
+#         description: 'The terragrunt module to deploy'
+#         required: true
+#         type: string
+#       force_action:
+#         description: 'Force specific action (plan/apply) - overrides event-based logic'
+#         required: false
+#         type: string
+#         default: ''
+
+# env:
+#   tf_version: '1.8.5'
+#   tg_version: '0.68.3'
+#   region: 'us-west-2'
+
+# jobs:
+#   plan-apply:
+#     runs-on: PRLInfraRunner
+
+#     permissions:
+#       id-token: write
+#       contents: read
+      
+#     steps:         
+#     - name: Checkout
+#       uses: actions/checkout@v4
+
+#     - name: Install Terraform
+#       uses: hashicorp/setup-terraform@v3
+#       with:
+#         terraform_version: ${{ env.tf_version }}
+    
+#     - name: Check Terraform Formatting
+#       run: terraform fmt -check
+
+#     - name: Download Terragrunt
+#       run: |
+#         wget https://github.com/gruntwork-io/terragrunt/releases/download/v${{ env.tg_version }}/terragrunt_linux_amd64
+#         chmod +x terragrunt_linux_amd64
+#         sudo mv terragrunt_linux_amd64 /usr/local/bin/terragrunt
+      
+#     - name: Check Terragrunt Formatting
+#       run: |
+#         terragrunt hclfmt --terragrunt-check --terragrunt-diff
+
+#     - name: Configure AWS Auth
+#       uses: aws-actions/configure-aws-credentials@v4
+#       with:
+#         aws-region: ${{ env.region }}
+#         role-to-assume: arn:aws:iam::827609958089:role/AWS-GITHUB-OIDC-${{ inputs.account_role_code }}-ROLE 
+
+#     - name: Plan
+#       if: ${{ inputs.force_action == 'plan' || (inputs.force_action == '' && github.event_name == 'pull_request') }}
+#       run: |
+#         cd ./deployments/account/${{ inputs.account }}/regions/${{ inputs.region }}/${{ inputs.component }} 
+#         terragrunt plan --terragrunt-iam-role arn:aws:iam::${{ inputs.account_number }}:role/AWS-USW2-IACROLE-${{ inputs.account_role_code }}
+
+#     - name: Apply
+#       if: ${{ inputs.force_action == 'apply' || (inputs.force_action == '' && (github.event_name == 'push' && github.ref == 'refs/heads/main' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')) }}
+#       run: |
+#         cd ./deployments/account/${{ inputs.account }}/regions/${{ inputs.region }}/${{ inputs.component }} 
+#         terragrunt apply --terragrunt-iam-role arn:aws:iam::${{ inputs.account_number }}:role/AWS-USW2-IACROLE-${{ inputs.account_role_code }} --terragrunt-non-interactive -auto-approve
+
+name: Bootstrap Plan & Apply Component
+
+on:
+  workflow_call:
+    inputs:
+      target_account:
+        description: 'Target AWS account name (e.g., aws-shared-non-prod)'
+        required: true
+        type: string
+      target_account_code:
+        description: 'Target account code (e.g., SNPRD, SPRD)'
+        required: true
+        type: string
+      target_account_id:
+        description: 'Target AWS account ID'
+        required: true
+        type: string
+      region:
+        description: 'AWS region'
+        required: true
+        type: string
+        default: us-west-2
+      component:
+        description: 'Bootstrap component name (e.g., bootstrap-iac-roles-snprd)'
+        required: true
+        type: string
+      repository_type:
+        description: 'Repository type for OIDC authentication (cicdsecurity or networkfoundation)'
+        required: true
+        type: string
+        default: 'cicdsecurity'
+      force_action:
+        description: 'Force specific action (plan/apply)'
+        required: false
+        type: string
+        default: ''
+
+env:
+  TF_VERSION: '1.8.5'
+  TG_VERSION: '0.68.3'
+  AWS_REGION: 'us-west-2'
+
+jobs:
+  bootstrap-plan-apply:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
+           
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3
+      with:
+        terraform_version: ${{ env.TF_VERSION }}
+
+    - name: Install Terragrunt
+      run: |
+        wget https://github.com/gruntwork-io/terragrunt/releases/download/v${{ env.TG_VERSION }}/terragrunt_linux_amd64
+        chmod +x terragrunt_linux_amd64
+        sudo mv terragrunt_linux_amd64 /usr/local/bin/terragrunt
+
+    - name: Check Terraform Formatting
+      run: terraform fmt -check -recursive
+
+    - name: Check Terragrunt Formatting
+      run: terragrunt hclfmt --terragrunt-check --terragrunt-diff
+
+    # Bootstrap authentication - Always from Management Account
+    - name: Configure AWS Auth (Management Account OIDC)
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-region: ${{ env.AWS_REGION }}
+        role-to-assume: arn:aws:iam::114978791651:role/PRL-MGMT-GLBL-N-IAMROL-OIDC-AWS${{ upper(inputs.repository_type) }}-MGMT
+        role-session-name: bootstrap-${{ inputs.target_account_code }}-${{ github.run_id }}
+
+    - name: Verify AWS Authentication
+      run: |
+        echo "Current AWS Identity:"
+        aws sts get-caller-identity
+        echo "Bootstrap Target: ${{ inputs.target_account }} (${{ inputs.target_account_id }})"
+        echo "Component: ${{ inputs.component }}"
+
+    - name: Set Working Directory
+      id: workdir
+      run: |
+        workdir="./deployments/accounts/aws-mgmt/${{ inputs.region }}/${{ inputs.component }}"
+        echo "directory=$workdir" >> $GITHUB_OUTPUT
+        echo "Working directory: $workdir"
+
+    - name: Verify Bootstrap Directory
+      run: |
+        if [ ! -d "${{ steps.workdir.outputs.directory }}" ]; then
+          echo "❌ Bootstrap directory not found: ${{ steps.workdir.outputs.directory }}"
+          echo "Expected structure: deployments/accounts/aws-mgmt/${{ inputs.region }}/${{ inputs.component }}"
+          exit 1
+        fi
+        echo "✅ Bootstrap directory found: ${{ steps.workdir.outputs.directory }}"
+
+    - name: Terragrunt Init
+      working-directory: ${{ steps.workdir.outputs.directory }}
+      run: terragrunt init
+
+    - name: Terragrunt Plan
+      if: ${{ inputs.force_action == 'plan' || (inputs.force_action == '' && github.event_name == 'pull_request') }}
+      working-directory: ${{ steps.workdir.outputs.directory }}
+      run: |
+        echo "Planning bootstrap for ${{ inputs.target_account_code }} (${{ inputs.target_account_id }})"
+        terragrunt plan -detailed-exitcode
+      env:
+        GITHUB_RUN_ID: ${{ github.run_id }}
+        GITHUB_ACTOR: ${{ github.actor }}
+
+    - name: Terragrunt Apply
+      if: ${{ inputs.force_action == 'apply' || (inputs.force_action == '' && (github.event_name == 'push' && github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch')) }}
+      working-directory: ${{ steps.workdir.outputs.directory }}
+      run: |
+        echo "Applying bootstrap for ${{ inputs.target_account_code }} (${{ inputs.target_account_id }})"
+        terragrunt apply --terragrunt-non-interactive -auto-approve
+      env:
+        GITHUB_RUN_ID: ${{ github.run_id }}
+        GITHUB_ACTOR: ${{ github.actor }}
+
+    - name: Output Created IAC Roles
+      if: success()
+      working-directory: ${{ steps.workdir.outputs.directory }}
+      run: |
+        echo "✅ Bootstrap completed for ${{ inputs.target_account_code }}"
+        echo "Created IAC Roles in account ${{ inputs.target_account_id }}:"
+        terragrunt output -json | jq -r '.iac_role_arns.value // {} | to_entries[] | "- \(.key): \(.value)"' || echo "No role outputs available"
+
+    - name: Verify IAC Roles Created
+      if: success()
+      run: |
+        echo "Verifying IAC roles were created in target account..."
+        echo "Expected roles:"
+        echo "- PRL-${{ inputs.target_account_code }}-GLBL-N-IAMROL-IAC-CICDSECURITY"
+        echo "- PRL-${{ inputs.target_account_code }}-GLBL-N-IAMROL-IAC-NETWORKFOUNDATION"
+
+    - name: Bootstrap Summary
+      if: always()
+      run: |
+        if [ "${{ job.status }}" = "success" ]; then
+          echo "✅ Bootstrap completed successfully for ${{ inputs.target_account_code }}"
+          echo "Next steps:"
+          echo "1. Verify IAC roles exist in target account (${{ inputs.target_account_id }})"
+          echo "2. Test GitHub Actions can assume the new IAC roles"
+          echo "3. Begin regular infrastructure deployments"
+        else
+          echo "❌ Bootstrap failed for ${{ inputs.target_account_code }}"
+          echo "Common issues to check:"
+          echo "- OIDC role permissions in management account"
+          echo "- OrganizationAccountAccessRole exists in target account"
+          echo "- External ID matches in trust policies"
+          echo "- Network Foundation OIDC role exists if deploying both repo types"
+        fi

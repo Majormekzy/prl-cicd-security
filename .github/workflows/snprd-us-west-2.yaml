@@ -1,0 +1,139 @@
+# name: AWS-SHARED-NON-PROD - US-WEST-2
+
+# on:
+#   pull_request:
+#     branches:
+#     - main
+#     paths-ignore:
+#     - '.github/**'
+#     - '!.github/workflows/snprd-us-west-2.yaml'
+#   push:
+#     branches:
+#     - main
+#     paths-ignore:
+#     - '.github/**'
+#     - '!.github/workflows/snprd-us-west-2.yaml'
+
+# permissions:
+#   id-token: write
+#   contents: read
+
+# jobs:
+#   iac-role:
+#     uses: ./.github/workflows/plan-apply-component.yaml
+#     with:
+#       account: aws-shared-prod
+#       account_role_code: SPRD
+#       account_number: 058264438918
+#       region: us-west-2
+#       component: tf-iac-role
+    
+
+  # core:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-shared-non-prod
+  #     account_role_code: SNPRD
+  #     account_number: 114173797611
+  #     region: us-west-2
+  #     component: core
+
+  # ami:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-shared-non-prod
+  #     account_role_code: SNPRD
+  #     account_number: 114173797611
+  #     region: us-west-2
+  #     component: ami
+
+  # ami_builder:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-shared-non-prod
+  #     account_role_code: SNPRD
+  #     account_number: 114173797611
+  #     region: us-west-2
+  #     component: amibuilder
+
+  # ec2_autojoin:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-shared-non-prod
+  #     account_role_code: SNPRD
+  #     account_number: 114173797611
+  #     region: us-west-2
+  #     component: ec2-autojoin
+
+  # ec2_scheduler:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-shared-non-prod
+  #     account_role_code: SNPRD
+  #     account_number: 114173797611
+  #     region: us-west-2
+  #     component: ec2-scheduler
+
+  # state_change:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-shared-non-prod
+  #     account_role_code: SNPRD
+  #     account_number: 114173797611
+  #     region: us-west-2
+  #     component: state-change
+
+  # inventory_tracker:
+  #   uses: ./.github/workflows/plan-apply-component.yaml
+  #   with:
+  #     account: aws-sec-net-prod
+  #     account_role_code: SCNPRD
+  #     account_number: 827609958089
+  #     region: us-west-2
+  #     component: inventory-tracker
+
+name: Bootstrap SNPRD IAC Roles
+
+on:
+  pull_request:
+    branches:
+    - main
+    paths:
+    - 'deployments/accounts/aws-mgmt/us-west-2/bootstrap-iac-roles-snprd/**'
+    - '.github/workflows/bootstrap-snprd.yaml'
+    - '.github/workflows/bootstrap-plan-apply-component.yaml'
+  push:
+    branches:
+    - main
+    paths:
+    - 'deployments/accounts/aws-mgmt/us-west-2/bootstrap-iac-roles-snprd/**'
+    - '.github/workflows/bootstrap-snprd.yaml'
+    - '.github/workflows/bootstrap-plan-apply-component.yaml'
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to perform'
+        required: true
+        type: choice
+        options:
+        - plan
+        - apply
+        default: plan
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  bootstrap-snprd:
+    name: Bootstrap SNPRD IAC Roles
+    uses: ./.github/workflows/bootstrap-plan-apply-component.yaml
+    with:
+      target_account: aws-shared-non-prod
+      target_account_code: SNPRD
+      target_account_id: "730335485168"
+      region: us-west-2
+      component: bootstrap-iac-roles-snprd
+      repository_type: cicdsecurity
+      force_action: ${{ github.event.inputs.action || '' }}
+    secrets: inherit

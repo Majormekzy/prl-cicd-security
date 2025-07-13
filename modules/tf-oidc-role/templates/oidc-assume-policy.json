@@ -1,0 +1,90 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AssumeIACRole",
+      "Effect": "Allow",
+      "Action": "sts:AssumeRole",
+      "Resource": "arn:aws:iam::${target_account_id}:role/AWS-${account_code}-GLBL-N-IAMROL-IAC-${repo_key}"
+    },
+    {
+      "Sid": "AllowS3",
+      "Effect": "Allow",
+      "Action": [
+        "s3:*",
+        "s3:PutObject",
+        "s3:DeleteObject",
+        "s3:ListBucket",
+        "s3:GetBucketVersioning"
+      ],
+      "Resource": [
+        "arn:aws:s3:::${tf_state_bucket}",
+        "arn:aws:s3:::${tf_state_bucket}/*"
+      ]
+    },
+    {
+      "Sid": "AllowDynamodb",
+      "Effect": "Allow",
+      "Action": [
+        "dynamodb:GetItem",
+        "dynamodb:PutItem",
+        "dynamodb:DeleteItem",
+        "dynamodb:Scan",
+        "dynamodb:UpdateItem",
+        "dynamodb:DescribeTable"
+      ],
+      "Resource": [
+        "arn:aws:dynamodb:${region}:${account_id}:table/${tf_state_table}"
+      ]
+    },
+    {
+      "Sid": "BootstrapIACRoleCreation",
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreateRole",
+        "iam:PutRolePolicy",
+        "iam:AttachRolePolicy",
+        "iam:GetRole",
+        "iam:GetRolePolicy",
+        "iam:ListRolePolicies",
+        "iam:TagRole",
+        "iam:UpdateRole",
+        "iam:UpdateAssumeRolePolicy",
+        "iam:ListAttachedRolePolicies"
+      ],
+      "Resource": [
+        "arn:aws:iam::${target_account_id}:role/AWS-${account_code}-GLBL-N-IAMROL-IAC-*"
+      ],
+      "Condition": {
+        "StringEquals": {
+          "iam:PermissionsBoundary": "arn:aws:iam::${target_account_id}:policy/IAC-Bootstrap-Boundary"
+        }
+      }
+    },
+    {
+      "Sid": "ManagePermissionsBoundary",
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreatePolicy",
+        "iam:GetPolicy",
+        "iam:GetPolicyVersion",
+        "iam:ListPolicyVersions",
+        "iam:TagPolicy"
+      ],
+      "Resource": [
+        "arn:aws:iam::${target_account_id}:policy/IAC-Bootstrap-Boundary"
+      ]
+    },
+    {
+      "Sid": "CheckIACRoleExistence",
+      "Effect": "Allow",
+      "Action": [
+        "iam:GetRole",
+        "iam:ListRoles"
+      ],
+      "Resource": [
+        "arn:aws:iam::${target_account_id}:role/AWS-${account_code}-GLBL-N-IAMROL-IAC-*"
+      ]
+    }
+  ]
+}

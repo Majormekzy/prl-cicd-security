@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::${mgmt_account_id}:role/PRL-MGMT-GLBL-N-IAMROL-OIDC-AWS${upper(repo_key)}-${account_code}",
+          "arn:aws:iam::${mgmt_account_id}:root"
+        ]
+      },
+      "Action": "sts:AssumeRole",
+      "Condition": {
+        "StringEquals": {
+          "sts:ExternalId": "iac-deployment"
+        }
+      }
+    }
+  ]
+}

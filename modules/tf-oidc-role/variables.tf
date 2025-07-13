@@ -4,7 +4,7 @@ variable "repositories" {
   type = map(object({
     organization = string
     repository   = string
-    iac_accounts = list(string) # Which accounts this repo can deploy to
+    iac_accounts = list(string)                     # Which accounts this repo can deploy to
     branches     = optional(list(string), ["main"]) # Allowed branches, defaults to ["main"]
   }))
 }

@@ -1,11 +1,11 @@
 # Create IAC roles in target account
 resource "aws_iam_role" "iac_roles" {
   provider = aws.target
-  
+
   for_each = var.repo_configs
-  
+
   name = upper("PRL-${var.target_account_code}-GLBL-N-IAMROL-IAC-${upper(each.key)}")
-  
+
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -26,17 +26,17 @@ resource "aws_iam_role" "iac_roles" {
           }
         }
       }
-    #   {
-    #     # Allow SSO Administrator role for manual access
-    #     Action = "sts:AssumeRole"
-    #     Effect = "Allow"
-    #     Principal = {
-    #       AWS = "arn:aws:iam::${var.mgmt_account_id}:role/AWSReservedSSO_AWSAdministratorAccess_d24152c191e58617"
-    #     }
-    #   }
+      #   {
+      #     # Allow SSO Administrator role for manual access
+      #     Action = "sts:AssumeRole"
+      #     Effect = "Allow"
+      #     Principal = {
+      #       AWS = "arn:aws:iam::${var.mgmt_account_id}:role/AWSReservedSSO_AWSAdministratorAccess_d24152c191e58617"
+      #     }
+      #   }
     ]
   })
-  
+
   tags = merge(var.default_tags, {
     Repository = each.key
     Purpose    = "IAC Role for ${each.key} repository"
@@ -46,7 +46,7 @@ resource "aws_iam_role" "iac_roles" {
 # Attach managed policies to IAC roles
 resource "aws_iam_role_policy_attachment" "iac_role_managed_policies" {
   provider = aws.target
-  
+
   for_each = {
     for combo in flatten([
       for repo_key, config in var.repo_configs : [
@@ -57,7 +57,7 @@ resource "aws_iam_role_policy_attachment" "iac_role_managed_policies" {
       ]
     ]) : "${combo.role_key}-${combo.policy}" => combo
   }
-  
+
   role       = aws_iam_role.iac_roles[each.value.role_key].id
   policy_arn = each.value.policy
 }
@@ -65,7 +65,7 @@ resource "aws_iam_role_policy_attachment" "iac_role_managed_policies" {
 # Create and attach custom policies to IAC roles
 resource "aws_iam_role_policy" "iac_role_policies" {
   provider = aws.target
-  
+
   for_each = {
     for combo in flatten([
       for repo_key, config in var.repo_configs : [
@@ -77,7 +77,7 @@ resource "aws_iam_role_policy" "iac_role_policies" {
       ]
     ]) : "${combo.role_key}-${combo.policy_name}" => combo
   }
-  
+
   name   = each.value.policy_name
   role   = aws_iam_role.iac_roles[each.value.role_key].id
   policy = each.value.policy_doc
@@ -86,12 +86,12 @@ resource "aws_iam_role_policy" "iac_role_policies" {
 # Create state access policy for cross-account state management
 resource "aws_iam_role_policy" "state_access" {
   provider = aws.target
-  
+
   for_each = var.repo_configs
-  
+
   name = "StateAccess"
   role = aws_iam_role.iac_roles[each.key].id
-  
+
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [

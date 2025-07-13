@@ -9,8 +9,8 @@ locals {
         account_key  = account_key
         repository   = repo_config.repository
         organization = repo_config.organization
-        branches     = [
-          for branch in repo_config.branches : 
+        branches = [
+          for branch in repo_config.branches :
           "repo:${repo_config.organization}/${repo_config.repository}:ref:refs/heads/${branch}"
         ]
         account_id     = var.iac_accounts[account_key].account_id

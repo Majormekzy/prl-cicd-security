@@ -1,6 +1,6 @@
 resource "aws_iam_role" "terraform_state_access" {
   name = "TerraformStateAccess"
-  
+
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -21,7 +21,7 @@ resource "aws_iam_role" "terraform_state_access" {
 resource "aws_iam_role_policy" "terraform_state_access" {
   name = "TerraformStateAccess"
   role = aws_iam_role.terraform_state_access.id
-  
+
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [

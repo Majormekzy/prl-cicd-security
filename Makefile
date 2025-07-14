@@ -14,7 +14,7 @@ export AWS_PROFILE
 
 .PHONY: fmt
 fmt:
-	@terragrunt hcl format
+	@terragrunt hclfmt --diff
 	@terraform fmt -recursive
 
 .PHONY: init

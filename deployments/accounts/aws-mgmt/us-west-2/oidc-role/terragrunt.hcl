@@ -10,7 +10,7 @@ terraform {
 
 dependency "oidc_provider" {
   config_path = "../oidc-provider"
-  
+
   # mock_outputs = {
   #   oidc_provider_arn = "arn:aws:iam::123456789012:oidc-provider/token.actions.githubusercontent.com"
   # }
@@ -25,21 +25,21 @@ inputs = {
   oidc_provider_arn = dependency.oidc_provider.outputs.oidc_provider_arn
   tf_state_bucket   = "aws-mgmt-usw2-n-s3bukt--terraform-state"
   tf_state_table    = "aws-mgmt-usw2-n-dynamo-terraform-locks"
-  
+
   # Define all repositories and their allowed target accounts
   repositories = {
     awscicdsecurity = {
       organization = "PRLInfra"
       repository   = "aws-cicd-security"
       iac_accounts = ["snprd", "sprd", "mgmt"]
-      branches     = ["main", "feat/*", "fix/*"]  # Allow main and feature/fix branches
+      branches     = ["main", "feat/*", "fix/*"] # Allow main and feature/fix branches
     }
 
     awsnetworkfoundation = {
       organization = "PRLInfra"
       repository   = "aws-cicd-security"
       iac_accounts = ["snprd", "sprd", "mgmt"]
-      branches     = ["main", "feat/*", "fix/*"]  # Allow main and feature/fix branches
+      branches     = ["main", "feat/*", "fix/*"] # Allow main and feature/fix branches
     }
     # Uncomment and add other repositories as needed
     # awsinfrastorage = {
@@ -55,7 +55,7 @@ inputs = {
     #   branches     = ["main"]  # Only allow main branch
     # }
   }
-  
+
   # Define all target accounts
   iac_accounts = {
     snprd = {
@@ -71,7 +71,7 @@ inputs = {
       account_code = "mgmt"
     }
   }
-  
+
   # Pass default tags
   tags = {
     MODULE = "oidc-role"

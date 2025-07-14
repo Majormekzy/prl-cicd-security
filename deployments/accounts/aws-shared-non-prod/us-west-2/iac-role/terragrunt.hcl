@@ -32,9 +32,11 @@ locals {
         })
       }
     }
+  }
+}
 
-  inputs = {
-  account_code          = "SNPRD"
+inputs = {
+  account_code    = "SNPRD"
   mgmt_account_id = "114978791651"
-  repo_configs          = local.repo_configs
+  repo_configs    = local.repo_configs
 }

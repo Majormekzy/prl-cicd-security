@@ -67,6 +67,7 @@ jobs:
       run: terraform fmt -check -recursive
 
     - name: Check Terragrunt Formatting
+      working-directory: ${{ steps.workdir.outputs.directory }}
       run: terragrunt hclfmt --terragrunt-check --terragrunt-diff
 
     # Bootstrap authentication - Always from Management Account

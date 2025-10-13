@@ -1,4 +1,4 @@
 locals {
-  region           = "us-west-2"
-  region_code      = "usw2"
+  region      = "us-west-2"
+  region_code = "usw2"
 }

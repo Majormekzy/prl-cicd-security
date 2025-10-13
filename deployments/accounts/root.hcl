@@ -12,17 +12,17 @@
 #   tf_iac_repo_account_role_arn  = "arn:aws:iam::${local.aws_account_id}:role/${local.tf_iac_repo_account_role_name}"
 #   mgmt_account_id               = "114978791651"
 #   env                           = local.account_vars.locals.env
-  
+
 #   # State configuration
 #   state_bucket     = "prl-mgmt-${local.aws_region_code}-n-s3bukt--terraform-state"
 #   state_lock_table = "prl-mgmt-${local.aws_region_code}-n-dynamo-terraform-locks"
-  
+
 #   # Check if we're in bootstrap mode
 #   is_bootstrap = get_env("BOOTSTRAP_MODE", "false") == "true"
-  
+
 #   # GitHub repository
 #   github_repository = "aws-cicd-security"
-  
+
 #   # Default tags
 #   default_tags = {
 #     GENERATED-BY         = "terraform"
@@ -184,8 +184,8 @@
 # # )
 
 locals {
-  region_vars     = read_terragrunt_config(find_in_parent_folders("region.hcl"))
-  account_vars    = read_terragrunt_config(find_in_parent_folders("account.hcl"))
+  region_vars  = read_terragrunt_config(find_in_parent_folders("region.hcl"))
+  account_vars = read_terragrunt_config(find_in_parent_folders("account.hcl"))
 
   # Core variables
   aws_region                    = local.region_vars.locals.region
@@ -197,17 +197,17 @@ locals {
   tf_iac_repo_account_role_arn  = "arn:aws:iam::${local.aws_account_id}:role/${local.tf_iac_repo_account_role_name}"
   mgmt_account_id               = "114978791651"
   env                           = local.account_vars.locals.env
-  
+
   # State configuration
   state_bucket     = "prl-mgmt-${local.aws_region_code}-n-s3bukt--terraform-state"
   state_lock_table = "prl-mgmt-${local.aws_region_code}-n-dynamo-terraform-locks"
-  
+
   # Bootstrap mode detection
   is_bootstrap = get_env("BOOTSTRAP_MODE", "false") == "true"
-  
+
   # GitHub repository
   github_repository = "aws-cicd-security"
-  
+
   # Default tags
   default_tags = {
     GENERATED-BY         = "terraform"

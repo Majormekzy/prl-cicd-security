@@ -7,14 +7,14 @@ locals {
   account_vars = read_terragrunt_config(find_in_parent_folders("account.hcl"))
 
   # Management account details (where this runs)
-  aws_region                    = local.region_vars.locals.region
-  aws_region_code               = local.region_vars.locals.region_code
-  mgmt_account_id               = local.account_vars.locals.aws_account_id  # 114978791651
-  env                           = local.account_vars.locals.env
+  aws_region      = local.region_vars.locals.region
+  aws_region_code = local.region_vars.locals.region_code
+  mgmt_account_id = local.account_vars.locals.aws_account_id # 114978791651
+  env             = local.account_vars.locals.env
 
   # Target account details (where roles will be created)
-  target_account_id             = "730335485168"  # SNPRD account
-  target_account_code           = "SNPRD"
+  target_account_id   = "730335485168" # SNPRD account
+  target_account_code = "SNPRD"
 
   # State configuration (stays in management account)
   state_bucket     = "prl-mgmt-${local.aws_region_code}-n-s3bukt--terraform-state"
@@ -24,10 +24,10 @@ locals {
   github_run_id = get_env("GITHUB_RUN_ID", "")
   github_actor  = get_env("GITHUB_ACTOR", "")
   user_name     = get_env("USER", get_env("USERNAME", "unknown"))
-  
+
   # Create context-aware session name
   session_context = local.github_run_id != "" ? "github-${local.github_run_id}" : "local-${local.user_name}"
-  session_name = "bootstrap-iac-roles-${local.target_account_code}-${local.session_context}"
+  session_name    = "bootstrap-iac-roles-${local.target_account_code}-${local.session_context}"
 
   # Default tags
   default_tags = {
@@ -39,7 +39,7 @@ locals {
     TECHNICAL-OWNER      = "Emeka Machie"
     TECHNICAL-SUPPORT    = "Emeka Machie"
     COST-CENTER          = "DEP003.635.350"
-    ACCOUNT-ID           = local.target_account_id  # Target account ID
+    ACCOUNT-ID           = local.target_account_id # Target account ID
     GITHUB_REPO          = "aws-cicd-security"
     TARGET-ACCOUNT       = "SNPRD"
   }
@@ -79,7 +79,7 @@ locals {
         })
       }
     }
-    
+
     networkfoundation = {
       custom_policies = {
         NetworkCustomPolicy = jsonencode({
@@ -149,11 +149,11 @@ EOF
 inputs = {
   target_account_id          = local.target_account_id
   target_account_code        = local.target_account_code
-  mgmt_account_id           = local.mgmt_account_id
-  aws_region                = local.aws_region
-  repo_configs              = local.repo_configs
-  state_bucket              = local.state_bucket
-  state_lock_table          = local.state_lock_table
+  mgmt_account_id            = local.mgmt_account_id
+  aws_region                 = local.aws_region
+  repo_configs               = local.repo_configs
+  state_bucket               = local.state_bucket
+  state_lock_table           = local.state_lock_table
   local_deployment_role_name = "AWSAdministratorAccess"
-  external_id               = "bootstrap-iac-roles"
+  external_id                = "bootstrap-iac-roles"
 }
